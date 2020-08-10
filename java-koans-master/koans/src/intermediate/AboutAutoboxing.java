@@ -45,8 +45,8 @@ public class AboutAutoboxing {
         assertEquals(longList.get(0), 42l);
 
         List<Character> characterList = new ArrayList<Character>();
-        characterList.add(0, new Character('z'));
-        assertEquals(characterList.get(0), __);
+        characterList.add(0, 'z');
+        assertEquals(characterList.get(0), 'z');
     }
 
 }
