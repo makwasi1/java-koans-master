@@ -14,7 +14,7 @@ public class AboutDefaultMethods {
             public String reverse(String s) {
                 return new StringBuilder(s).reverse().toString();
             }
-        };
+        }; //first capitalize then reverse
         String capitalizedReversed = stringUtil.capitalize(
                 stringUtil.reverse("gnirut"));
         assertEquals(capitalizedReversed, "TURING");
@@ -22,7 +22,7 @@ public class AboutDefaultMethods {
 
     @Koan
     public void interfaceStaticMethod() {
-        assertEquals(StringUtil.enclose("me"), __);
+        assertEquals(StringUtil.enclose("me"), "[me]");
     }
 
     interface StringUtil {
